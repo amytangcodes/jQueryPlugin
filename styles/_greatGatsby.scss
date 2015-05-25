@@ -1,0 +1,26 @@
+body {
+	font-family: $font4 !important;
+	background: #29449a !important;
+	color: #FFF162 !important;
+}
+
+h1 {
+	color: #fce500 !important;
+}
+
+.btn a {
+	padding: 10px 20px;
+	background: #d9494a;
+	color: #fce500;
+	&:hover {
+		color: #613318;
+	}
+}
+
+.box {
+	background: #20164b;
+	color: #fce500;
+	width: 50%;
+	padding: 10px 20px;
+	margin: 30px;
+}

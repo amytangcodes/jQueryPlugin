@@ -1,0 +1,27 @@
+body {
+	font-family: $font6 !important;
+	background: $bgColor-9 !important;
+	color: $color-10 !important;
+}
+
+h1 {
+	color: $color-9 !important;
+}
+
+.btn a {
+	padding: 10px 20px;
+	background: $btncolor-13;
+	color: $btncolor-14;
+	&:hover {
+		background: $btncolor-15;
+	}
+}
+
+.box {
+	background: $bgcolor-10;
+	color: $color-11;
+	width: 50%;
+	padding: 10px 25px;
+	margin: 30px;
+	border-radius: 20px;
+}

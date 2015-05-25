@@ -24,30 +24,64 @@ $font7: 'Megrim', cursive;
 /* -------------------------------- 
  Color Palette
 -------------------------------- */
-//Background Color 
+//Main Color
 $bgColor-1: #fff;  			//white
 $bgColor-2: #070707;		//black
-// $bgColor-3: #; 		//
-// $bgColor-4: #; 		//
-
-// Colors
 $color-1: #fff;				//white
 $color-2: #121112;			//black
-$color-3: #ffea00;			//yellow
+$btncolor-1: black;			//background black 
+$btncolor-2: #fff;  		//font white
+$btncolor-3: tomato;   		//hover tomato
 
-// btn Colors
-$btncolor-1: #323232;		//dark brown
-$btncolor-2: #534747;  		//med brown
-$btncolor-3: #534747;   	//light brown
-$btncolor-4: #cbbeaa;		//tan brown
-$btncolor-5: #e6e3de;		//off white
-$btncolor-6: #ffffff;		//white
+//Wester Color
+$bgColor-3: #79400D;  		//main light brown
+$bgColor-4: #683609;		//box medium brown 
+$color-3: #150A00;			//h1 dark brown
+$color-4: #301700;			//main medium brown
+$btncolor-4: #493829;		//background dark brown
+$btncolor-5: #D57500;  		//font orange brown
+$btncolor-6: #613318;   	//hover brown
+$btncolor-7: #a9a18c;		//hover light brown
+
+//Great Gatsby Color
+// $bgColor-5: #29449a ;  		//main royal
+// $bgcolor-6: #20164b;		//box rolls
+// $color-5: #fce500;			//h1 daisy
+// $color-6: #FFF162;			//main medium yellow
+// $btncolor-8: #d9494a;  		//background deep persimmon
+// $btncolor-9: #fce500;   	//font daisy
+
+//Disco Color
+$bgColor-7: #FDFFDF;  		//main sundried
+$bgcolor-8: #FFA87C;		//box grapefruit
+$color-7: #E90101;			//h1 sirope
+$color-8: #971B49;			//main pants on fire
+$btncolor-10: #6F8E94;  	//background blinking a lot
+$btncolor-11: #854F70;   	//font a lot to say
+$btncolor-12: #C6BFA3;		//hover background C6BFA3
+
+//Future Color
+$bgColor-9: #0F0D15;  		//main labyrinth system
+$bgcolor-10: #FFFF33;		//box yellow at its finest
+$color-9: #ADF512;			//h1 brush with greatness
+$color-10: #ADF512;			//main brush with greatness
+$color-11: #000408;			//box the thinker
+$btncolor-13: #526569;  	//background machine love
+$btncolor-14: #D1D7AB;   	//font asbestos fibres 
+$btncolor-15: #E2E6D5;		//hover background lucifer
+
 
 /* -------------------------------- 
 Imports
 -------------------------------- */
 @import "normalize";
 @import "western";
+
+@import "existence";
+@import "future";
+
+@import "greatGatsby";
+@import "disco";
 
 /* -------------------------------- 
 Primary styling
@@ -62,6 +96,7 @@ body {
 .wrapper {
 	margin: 5%;
 }
+
 /* -------------------------------- 
 Header styling
 -------------------------------- */
@@ -69,14 +104,6 @@ h1, h2, h3 {
 	line-height: 1em;
 	letter-spacing: 4px;
 	text-transform: uppercase;
-}
-
-h1 {
-
-}
-
-h2 {
-	
 }
 
 h3 {
@@ -108,65 +135,32 @@ span {
 	padding: 5px;
 }
 
-// /* -------------------------------- 
-// Modules - reusable parts of our design
-// -------------------------------- */
-// .cd-container {
-//   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-//   width: 90%;
-//   max-width: 1170px;
-//   margin: 0 auto;
-// }
-// .cd-container::after {
-//   /* clearfix */
-//   content: '';
-//   display: table;
-//   clear: both;
-// }
+nav {
+	width: 80%;
+	background: #bada55;
+	margin: 0 auto;
+}
 
-// /* -------------------------------- 
+ul.buttons {
+	list-style: none;
+	width: 100%;
+	// display: inline-block;
+	margin: 0 auto;
+	padding: 0;
 
-// Main components 
+	li {
+		float: left;
+		margin: 20px 30px;
+		padding: 10px;
+		border: 2px solid black;
+		border-radius: 3px;
+	}
 
-// -------------------------------- */
+	div {
 
-// #cd-timeline {
-//   position: relative;
-//   padding: 2em 0;
-//   margin-top: 2em;
-//   margin-bottom: 2em;
-// }
+	}
+}
 
+.themeBtn {
 
-
-
-
-
-
-
-
-
-
-
-
-/* Resolution targeting */
-/* Portrait tablet and small desktops */
-			// @media (max-width: 940px) {
-			// 	body {
-			// 		background:green;
-			// 	}
-			// }
-			 
-			// /* Landscape phone to portrait tablet */
-			// @media (max-width: 768px) {
-			// 	body {
-			// 		background:red;
-			// 	}
-			// }
-			 
-			// /* Landscape phones and down */
-			// @media (max-width: 480px) {
-			// 	body {
-			// 		background:yellow;
-			// 	}
-			// }
+}
